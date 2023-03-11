@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Contact-list-React-Redux/static/css/main.593605b6.css",
+    "main.js": "/Contact-list-React-Redux/static/js/main.56db66b9.js",
+    "index.html": "/Contact-list-React-Redux/index.html",
+    "main.593605b6.css.map": "/Contact-list-React-Redux/static/css/main.593605b6.css.map",
+    "main.56db66b9.js.map": "/Contact-list-React-Redux/static/js/main.56db66b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.593605b6.css",
+    "static/js/main.56db66b9.js"
+  ]
+}
