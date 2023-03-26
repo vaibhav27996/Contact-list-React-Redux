@@ -10,6 +10,7 @@ import Other from "./components/Other";
 import { Provider } from 'react-redux';
 
 //connect the store with app component
+
 const store = createStore(contactReducer);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

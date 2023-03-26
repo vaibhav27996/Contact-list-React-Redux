@@ -21,7 +21,6 @@ const contactReducer = (state = initialState, action) => {
             state = updateContact;
             return state;
 
-     
         default:
             return state;
     }

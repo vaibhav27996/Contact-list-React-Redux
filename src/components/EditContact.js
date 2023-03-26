@@ -7,6 +7,7 @@ import styles from '../styles/form.module.css';
 
 const EditContact = () => {
     //get state from store
+    
     const contacts = useSelector(state => state);
     const dispatch = useDispatch();
     const navigate = useNavigate();

@@ -11,6 +11,7 @@ const Home = () => {
     const dispatch = useDispatch();
 
     //handling delete event
+    
     const deleteContact = (id) => {
         alert('Are you sure want to delete this contact?');
         dispatch({ type: 'DELETE_CONTACT', contact_id: id });

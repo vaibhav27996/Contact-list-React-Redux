@@ -17,7 +17,7 @@ function App () {
     useEffect(() => {
         const data = [];
         const promise = async () => {
-            await fetch('https://jsonplaceholder.typicode.com/users/')
+            await fetch('https://jsonplaceholder.typicode.com/users/') 
                 .then((response) => response.json())
                 .then((json) => {
                     json.map((contact) => {
