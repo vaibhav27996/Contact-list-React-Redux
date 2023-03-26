@@ -11,27 +11,28 @@ import { useEffect } from "react";
 
 function App () {
 
-  const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-      const data = [];
-      const promise = async () => {
-          await fetch('https://jsonplaceholder.typicode.com/users/')
-              .then((response) => response.json())
-              .then((json) => {
-                  json.map((contact) => {
-                      data.push({
-                          id: contact.id,
-                          name: contact.name,
-                          number: contact.phone,
-                          email: contact.email
-                      });
-                  })
-              });
-          dispatch({ type: 'FETCH_CONTACTS', contactDatas: data });
-      };
-      promise();
-  }, []);
+    //fetching the contact list of user from api and call dispatch action to store the data in store
+    useEffect(() => {
+        const data = [];
+        const promise = async () => {
+            await fetch('https://jsonplaceholder.typicode.com/users/')
+                .then((response) => response.json())
+                .then((json) => {
+                    json.map((contact) => {
+                        data.push({
+                            id: contact.id,
+                            name: contact.name,
+                            number: contact.phone,
+                            email: contact.email
+                        });
+                    })
+                });
+            dispatch({ type: 'FETCH_CONTACTS', contactDatas: data });
+        };
+        promise();
+    }, []);
 
 
   return (

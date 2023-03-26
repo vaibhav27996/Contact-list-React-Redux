@@ -6,6 +6,7 @@ import {toast}  from 'react-toastify';
 import styles from '../styles/form.module.css';
 
 const EditContact = () => {
+    //get state from store
     const contacts = useSelector(state => state);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -13,6 +14,7 @@ const EditContact = () => {
     const [email, setEmail] = useState('');
     const [number, setNumber] = useState('');
 
+    //getting id on edit button
     const { id } = useParams();
 
 

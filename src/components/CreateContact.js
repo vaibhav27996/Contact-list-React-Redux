@@ -19,6 +19,7 @@ function CreateContact() {
     const navigate=useNavigate();
 
 
+    //handing the input data on click submit button
     const handleSubmit=async (e)=>{
         e.preventDefault();
 
