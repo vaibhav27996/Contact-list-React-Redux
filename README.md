@@ -1,3 +1,29 @@
+# Contact List App - React and Redux
+
+Here Link - https://vaibhav27996.github.io/Contact-list-React-Redux/
+
+ *(**If the list is not loading ,click Contact List Heading once**)*
+
+* **Home Page**- Home page has the list of contact with edit , delete and add button at top of right corner
+
+![Home](https://user-images.githubusercontent.com/119880818/227784680-74edef96-a57c-4f6a-bef7-6f4cec1c7e42.PNG)
+
+
+# 
+
+* **Add Contact** - When you click on add button , you will redirect to add page
+
+![Add](https://user-images.githubusercontent.com/119880818/227785570-65caba7a-0183-4add-9e0d-dd807e71eb53.PNG)
+
+
+# 
+
+* **Edit Contact** - When you click on edit button , you will redirect to edit page
+
+![Edit](https://user-images.githubusercontent.com/119880818/227784941-1f6d25a3-bd28-47bc-a2e4-655760a0c603.PNG)
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
