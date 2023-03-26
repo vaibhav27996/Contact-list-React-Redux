@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
- import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import styles from '../styles/home.module.css';
 
 const Home = () => {
 
@@ -10,6 +11,7 @@ const Home = () => {
     const dispatch = useDispatch();
 
     const deleteContact = (id) => {
+        alert('Are you sure want to delete this contact?');
         dispatch({ type: 'DELETE_CONTACT', contact_id: id });
         toast.success('Contact deleted successfully!');
     }
@@ -19,8 +21,8 @@ const Home = () => {
             <div className='row'>
                 
                 <div className='col-md-10 mx-auto mt-3'>
-                    <table className='table table-bordered table-striped table-responsive table-hover'>
-                        <thead className='text-white text-left bg-info '>
+                    <table className='table  table-responsive table-hover'>
+                        <thead className={`text-white text-left ${styles.table_heading}`}>
                             <tr>
                                 <th>Sr.No</th>
                                 <th>Name</th>
@@ -29,7 +31,7 @@ const Home = () => {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody style={{backgroundColor:'white'}}>
                             {
                                 contacts.map((contact, id) => (
                                     
@@ -39,7 +41,7 @@ const Home = () => {
                                         <td>{contact.email}</td>
                                         <td>{contact.number}</td>
                                         <td>
-                                            <Link to={`/edit/${contact.id}`} className='btn btn-small btn-primary me-2'>Edit</Link>
+                                            <Link to={`/edit/${contact.id}`} className='btn btn-small btn-success me-2'>Edit</Link>
                                             <button type='button' onClick={() => deleteContact(contact.id)} className='btn btn-small btn-danger'>Delete</button>
                                         </td>
                                     </tr>

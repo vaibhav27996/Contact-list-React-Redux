@@ -5,7 +5,7 @@ const Navbar=()=>{
     return (
         <div className={styles.navbar}>
            <Link style={{ float:"right", margin: "7px"}} to='/add' className='btn btn-small btn-secondary '>Add Contact</Link>
-           <h3 className='{styles.heading}'>Contact List</h3>
+           <h3 className='{styles.heading}'><Link to='/' className={styles.contactLink}>Contact List</Link></h3>
         </div>
     )
 

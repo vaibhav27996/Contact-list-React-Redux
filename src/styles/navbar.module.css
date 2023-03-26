@@ -1,8 +1,19 @@
 .navbar{
-    background-color: #27ccf1;
+    background-color: #56a2b3;
     color: white;
     height: 52px;
 }
 .heading{
-    padding: 7px;
+    padding: 9px;
+}
+
+.contactLink{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.contactLink:hover{
+    color: #cfcfcf;
+    box-shadow: 6px 6px 7px 2px grey
 }

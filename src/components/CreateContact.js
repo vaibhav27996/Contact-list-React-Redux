@@ -67,15 +67,17 @@ function CreateContact() {
 
                         <label  className='label'>Email</label><br />
                         <input type="email" className='form-control mt-2' onChange={(e)=>setEmail(e.target.value)} placeholder="Enter the Email" required/><br />
-                        <button type='submit' className='btn btn-small btn-success me-2'>
-                                Save
-                        </button>
-
+                        
                         <Link to="/">
-                            <button  className='btn btn-small btn-danger'>
+                            <button  className={`btn btn-xs btn-danger ${styles.commonBtn}`}>
                                 Back
                             </button>
                         </Link>
+
+                        <button type='submit' className={`btn btn-small btn-success me-2  ${styles.commonBtn}`}>
+                                Save
+                        </button>
+
                     </form>
             </div>
 
